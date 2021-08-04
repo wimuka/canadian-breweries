@@ -38,7 +38,7 @@ const BreweryState = props => {
   const getBreweries = async input => {
     setLoading();
     const apiUrl = province => {
-      return `http://beermapping.com/webservice/locstate/${process.env.REACT_APP_API_KEY}/${province}&s=json`;
+      return `https://beermapping.com/webservice/locstate/${process.env.REACT_APP_API_KEY}/${province}&s=json`;
     };
 
     const fetchData = async input =>
