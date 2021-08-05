@@ -35,10 +35,11 @@ const BreweryState = props => {
     setTxtInput(e.target.value);
   };
 
+  //Adding API KEY to the url so it's easier to run localy. Usually I would keep it in .env file and have env variable in Heroku dashboard.
   const getBreweries = async input => {
     setLoading();
     const apiUrl = province => {
-      return `https://beermapping.com/webservice/locstate/${process.env.REACT_APP_API_KEY}/${province}&s=json`;
+      return `https://beermapping.com/webservice/locstate/f13f4ee3d949e99473b9c41e8be0a994/${province}&s=json`;
     };
 
     const fetchData = async input =>
