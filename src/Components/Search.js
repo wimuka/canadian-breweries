@@ -53,7 +53,7 @@ const Search = () => {
           value={txtInput}
           onChange={e => onInputChange(e)}
           maxLength='27'
-          placeholder='Type in province name'
+          placeholder='Province name'
         />
         <StyledButton onClick={() => getBreweries(txtInput)}>Find</StyledButton>
         <StyledButton onClick={() => clearInput()}>Clear</StyledButton>
